@@ -2,22 +2,30 @@
 iAd, AdMob and IAP wrapper for iOS
 
 ## Features
-  * iPhone and iPad compatability
   * iAd and AdMob support
-  * IAP to remove advert
+  * iPhone and iPad compatability
+  * In app purchase to remove advert
 
 ## Installation
 
 1) Link these frameworks to your project.
 ```bash
 AdSupport
+AudioToolbox
+AVFoundation
+CoreGraphics
+CoreMedia
+CoreTelephony
+EventKit
+EventKitUI
+MessageUI
 StoreKit
+SystemConfiguration
 ```
 
 2) Add these lines to your Podfile.
 ```bash
 pod 'CryptoSwift'
-pod 'Google/Analytics'
 pod 'Google/AdMob'
 ```
 
@@ -28,14 +36,14 @@ pod 'Google/AdMob'
 
 ```swift
 let advert = VLBanner.shared
-advert.adUnitID = "ca-app-pub-xxxxxxxxx/xxxxxxxxx" //Insert your AdMob identifier here
-advert.production = true //Choose whether test or production adverts are shown
+advert.adUnitID = "ca-app-pub-xxxxxxxx/xxxxxxxx" //Insert your AdMob identifier here
+advert.production = false //Choose whether test or production adverts are shown
 advert.viewController = self //View controller to present modal adverts
 self.view.addSubview(advert)
 advert.start() //Begin advert cycle
 ```
 
-The banner will resize itself as needed to display its content.
+The banner will resize itself as needed to display its current content.
 Constraints can be used to auto resize superviews and ui elements to fit onto the banner.
 
 ## Default View
@@ -51,6 +59,7 @@ defaultLabel.textAlignment = NSTextAlignment.Center
 defaultLabel.backgroundColor = UIColor.blackColor()
 defaultLabel.textColor = UIColor.whiteColor()
 ```
+See below for the delegate method to detect touches to the default view.
 
 ## Advert Delegate
 
@@ -84,7 +93,8 @@ let advert = VLBanner.shared
 advert.purchaseRemoveAdverts()
 advert.restoreRemoveAdverts()
 ```
-If the transaction has been successful the banner will automaticlly hide itself and store its state in `NSUserDefaults`. You can access this value via the `VLBanner.shared.iapPurchased` boolean property. (true is removed)
+If the transaction has been successful the banner will automaticlly hide itself and store its state in `NSUserDefaults`.
+You can access this value via the `VLBanner.shared.iapPurchased` boolean property. (true is hidden)
 
 You can then use the following `VLBannerPurchaseDelegate` methods to be notified of IAP changes.
 ```swift
@@ -95,7 +105,7 @@ func purchaseIAPFailed(advert: VLBanner, didFailToPurchaseWithError error: NSErr
 
 ## Get IAP Information
 
-You can request an `SKProduct` object from the banner to obtain IAP information.
+You can request an `SKProduct` object from the banner to obtain IAP information such as price.
 ```swift
 let advert = VLBanner.shared
 advert.requestProduct { (error, product) -> Void in
