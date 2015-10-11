@@ -46,7 +46,7 @@ class VLBanner: UIView, ADBannerViewDelegate, GADBannerViewDelegate, SKProductsR
 			}
 		}
 	}
-	var defaultLabel: UILabel? //Label displayed when no advert is visible
+	var defaultView: UIView? //Label displayed when no advert is visible
 	var iapIdentifier: String? //In app purchase identifier used when purchasing remove adverts
 	var iapProductCallback: ((error: NSError?, product: SKProduct?) -> Void)? //Request to get product information before purchasing
 	var iapPurchased = NSUserDefaults.standardUserDefaults().boolForKey("VLBanner") ?? false{ //If true the advert has been removed
@@ -140,7 +140,7 @@ class VLBanner: UIView, ADBannerViewDelegate, GADBannerViewDelegate, SKProductsR
 	func initDefaultAd(){
 		
 		//Use house label
-		if let label = defaultLabel{
+		if let label = defaultView{
 			defaultAd = label
 			defaultAd!.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight] //Allows ad to resize to superview
 			defaultAd!.frame = self.frame
