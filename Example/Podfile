@@ -4,5 +4,4 @@ platform :ios, '8.0'
 use_frameworks!
 
 pod 'CryptoSwift'
-pod 'Google/Analytics'
 pod 'Google/AdMob'

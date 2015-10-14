@@ -8,29 +8,17 @@ iAd, AdMob and IAP wrapper for iOS
 
 ## Installation
 
-1) Link these frameworks to your project.
-```bash
-AdSupport
-AudioToolbox
-AVFoundation
-CoreGraphics
-CoreMedia
-CoreTelephony
-EventKit
-EventKitUI
-MessageUI
-StoreKit
-SystemConfiguration
-```
-
-2) Add these lines to your Podfile.
+1) Add these lines to your Podfile.
 ```bash
 pod 'CryptoSwift'
 pod 'Google/AdMob'
 ```
 
-3) Add VLBanner.h to the build settings your target under:
-"Swift Compiler - Code Generation" -> "Objective -C Bridging Header" 
+2) Add VLBanner.h to the build settings your target under:
+"Swift Compiler - Code Generation" -> "Objective -C Bridging Header"
+
+3) You may get an error regarding bitcode, disable this under:
+"Build Options" -> "Enable Bitcode"
 
 ## Getting Started
 

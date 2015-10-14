@@ -120,9 +120,8 @@ class VLBanner: UIView, ADBannerViewDelegate, GADBannerViewDelegate, SKProductsR
 			request.testDevices = [ kGADSimulatorID ]
 			
 			//Make the current device serve test adverts by generating a AdMob Device ID
-			if let md5Device = ASIdentifierManager.sharedManager().advertisingIdentifier.UUIDString.md5(){
-				request.testDevices.append(md5Device)
-			}
+			let md5Device = ASIdentifierManager.sharedManager().advertisingIdentifier.UUIDString.md5()
+			request.testDevices.append(md5Device)
 		}
 		adMob!.loadRequest(request)
 	}

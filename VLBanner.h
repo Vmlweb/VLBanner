@@ -11,6 +11,5 @@
 
 #import <Google/Core.h>
 #import <Google/AdMob.h>
-#import <Google/Analytics.h>
 
 #endif
