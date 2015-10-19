@@ -85,6 +85,15 @@ class VLBanner: UIView, ADBannerViewDelegate, GADBannerViewDelegate, SKProductsR
 		deinitAdMob()
 		deinitDefaultAd()
 	}
+	func pause(){
+		deinitiAd()
+		deinitAdMob()
+	}
+	func resume(){
+		if !iapPurchased{
+			initiAd()
+		}
+	}
 	
 	//iAd Init
 	func initiAd(){
