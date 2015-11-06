@@ -49,6 +49,41 @@ defaultLabel.textColor = UIColor.whiteColor()
 ```
 See below for the delegate method to detect touches to the default view.
 
+## Cotainer View
+
+You can use the VLBannerContainer view controller subclass to wrap and respond correctly to the interface.
+
+```swift
+//Setup banner container
+let bannerContainer = VLBannerContainer()
+bannerContainer.subControllers.append(self)
+bannerContainer.addChildViewController(self)
+bannerContainer.edgesForExtendedLayout = UIRectEdge.None
+bannerContainer.view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+
+//Get application delegate
+let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+let window = appDelegate.window!
+
+//Add and remove views
+self.view.removeFromSuperview()
+bannerContainer.view.addSubview(self.view)
+window.rootViewController = bannerContainer
+```
+
+## Background App State
+
+To manage the app properly in the background use the pause and resume meothds.
+
+```swift
+func applicationDidEnterBackground(application: UIApplication) {
+	VLBanner.shared.pause()
+}
+func applicationWillEnterForeground(application: UIApplication) {
+	VLBanner.shared.resume()
+}
+```
+
 ## Advert Delegate
 
 You can use the protocol `VLBannerPurchaseDelegate` to be notified of advert changes.
