@@ -293,7 +293,7 @@ class VLBanner: UIView, ADBannerViewDelegate, GADBannerViewDelegate, SKProductsR
 			if UIDevice.currentDevice().userInterfaceIdiom == .Pad{
 				self.frame.size.height = 66
 			}else{
-				if UIDeviceOrientationIsLandscape(UIDevice.currentDevice().orientation){
+				if UIDevice.currentDevice().orientation.isLandscape.boolValue{
 					self.frame.size.height = 32
 				}else{
 					self.frame.size.height = 50
@@ -314,7 +314,7 @@ class VLBanner: UIView, ADBannerViewDelegate, GADBannerViewDelegate, SKProductsR
 			if UIDevice.currentDevice().userInterfaceIdiom == .Pad{
 				self.frame.size.height = 90
 			}else{
-				if UIDeviceOrientationIsLandscape(UIDevice.currentDevice().orientation){
+				if UIDevice.currentDevice().orientation.isLandscape.boolValue{
 					self.frame.size.height = 32
 				}else{
 					self.frame.size.height = 50
@@ -326,7 +326,7 @@ class VLBanner: UIView, ADBannerViewDelegate, GADBannerViewDelegate, SKProductsR
 			adMob!.frame.origin = CGPointZero
 			
 			//Set orientation
-			if UIDeviceOrientationIsLandscape(UIDevice.currentDevice().orientation){
+			if UIDevice.currentDevice().orientation.isLandscape.boolValue{
 				adMob!.adSize = kGADAdSizeSmartBannerLandscape
 			}else{
 				adMob!.adSize = kGADAdSizeSmartBannerPortrait
@@ -342,7 +342,7 @@ class VLBanner: UIView, ADBannerViewDelegate, GADBannerViewDelegate, SKProductsR
 			if UIDevice.currentDevice().userInterfaceIdiom == .Pad{
 				self.frame.size.height = 66
 			}else{
-				if UIDeviceOrientationIsLandscape(UIDevice.currentDevice().orientation){
+				if UIDevice.currentDevice().orientation.isLandscape.boolValue{
 					self.frame.size.height = 32
 				}else{
 					self.frame.size.height = 50
