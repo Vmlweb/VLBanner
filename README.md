@@ -1,5 +1,5 @@
 # VLBanner
-iAd, AdMob and IAP wrapper for iOS
+iAd, AdMob and IAP wrapper for iOS using Swift.
 
 ## Features
   * iAd and AdMob support
