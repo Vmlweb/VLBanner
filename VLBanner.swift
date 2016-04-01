@@ -99,8 +99,8 @@ class VLBanner: UIView, ADBannerViewDelegate, GADBannerViewDelegate, SKProductsR
 	func initiAd(){
 		iAd = ADBannerView(adType: ADAdType.Banner)
 		iAd!.frame = self.frame
-		iAd!.delegate = self
 		iAd!.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight] //Allows ad to resize to superview
+		iAd!.delegate = self
 	}
 	func deinitiAd(){
 		
