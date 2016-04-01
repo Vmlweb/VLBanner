@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		574DE4D51CAF03C7001A4BF8 /* VLBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574DE4D31CAF03C7001A4BF8 /* VLBanner.swift */; };
+		574DE4D61CAF03C7001A4BF8 /* VLBannerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574DE4D41CAF03C7001A4BF8 /* VLBannerContainer.swift */; };
 		576849AC1BCD9ED4004D2EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576849AB1BCD9ED4004D2EA2 /* AppDelegate.swift */; };
 		576849B31BCD9ED4004D2EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576849B11BCD9ED4004D2EA2 /* Main.storyboard */; };
 		576849B51BCD9ED4004D2EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576849B41BCD9ED4004D2EA2 /* Assets.xcassets */; };
 		576849B81BCD9ED4004D2EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576849B61BCD9ED4004D2EA2 /* LaunchScreen.storyboard */; };
-		576849C51BCD9F31004D2EA2 /* VLBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576849C41BCD9F31004D2EA2 /* VLBanner.swift */; settings = {ASSET_TAGS = (); }; };
-		576849D01BCDA28F004D2EA2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576849CF1BCDA28F004D2EA2 /* TabBarController.swift */; settings = {ASSET_TAGS = (); }; };
-		576849D21BCDA37C004D2EA2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576849D11BCDA37C004D2EA2 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		576849D01BCDA28F004D2EA2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576849CF1BCDA28F004D2EA2 /* TabBarController.swift */; };
+		576849D21BCDA37C004D2EA2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576849D11BCDA37C004D2EA2 /* TableViewController.swift */; };
 		8E61C26DD101866DDF6A957D /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 561CBA1E7F9DABDE29EAC813 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35292BEC85B85C19AA57A673 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		561CBA1E7F9DABDE29EAC813 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		574DE4D21CAF03C7001A4BF8 /* VLBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VLBanner.h; path = ../VLBanner.h; sourceTree = "<group>"; };
+		574DE4D31CAF03C7001A4BF8 /* VLBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VLBanner.swift; path = ../VLBanner.swift; sourceTree = "<group>"; };
+		574DE4D41CAF03C7001A4BF8 /* VLBannerContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VLBannerContainer.swift; path = ../VLBannerContainer.swift; sourceTree = "<group>"; };
 		576849A81BCD9ED4004D2EA2 /* VLBannerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VLBannerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		576849AB1BCD9ED4004D2EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		576849B21BCD9ED4004D2EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		576849B41BCD9ED4004D2EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		576849B71BCD9ED4004D2EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		576849B91BCD9ED4004D2EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		576849C31BCD9F31004D2EA2 /* VLBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VLBanner.h; path = ../../VLBanner.h; sourceTree = "<group>"; };
-		576849C41BCD9F31004D2EA2 /* VLBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VLBanner.swift; path = ../../VLBanner.swift; sourceTree = "<group>"; };
 		576849CF1BCDA28F004D2EA2 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		576849D11BCDA37C004D2EA2 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E376E7A329CDF63F8BA0AFF9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,8 +92,9 @@
 		576849C21BCD9EE0004D2EA2 /* VLBanner */ = {
 			isa = PBXGroup;
 			children = (
-				576849C31BCD9F31004D2EA2 /* VLBanner.h */,
-				576849C41BCD9F31004D2EA2 /* VLBanner.swift */,
+				574DE4D21CAF03C7001A4BF8 /* VLBanner.h */,
+				574DE4D31CAF03C7001A4BF8 /* VLBanner.swift */,
+				574DE4D41CAF03C7001A4BF8 /* VLBannerContainer.swift */,
 			);
 			name = VLBanner;
 			sourceTree = "<group>";
@@ -225,8 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				576849C51BCD9F31004D2EA2 /* VLBanner.swift in Sources */,
 				576849AC1BCD9ED4004D2EA2 /* AppDelegate.swift in Sources */,
+				574DE4D61CAF03C7001A4BF8 /* VLBannerContainer.swift in Sources */,
+				574DE4D51CAF03C7001A4BF8 /* VLBanner.swift in Sources */,
 				576849D01BCDA28F004D2EA2 /* TabBarController.swift in Sources */,
 				576849D21BCDA37C004D2EA2 /* TableViewController.swift in Sources */,
 			);
@@ -344,7 +348,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vmlweb.vlbanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = ../../VLBanner.h;
+				SWIFT_OBJC_BRIDGING_HEADER = ../VLBanner.h;
 			};
 			name = Debug;
 		};
@@ -357,7 +361,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vmlweb.vlbanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = ../../VLBanner.h;
+				SWIFT_OBJC_BRIDGING_HEADER = ../VLBanner.h;
 			};
 			name = Release;
 		};

@@ -1,1 +1,33 @@
+PODS:
+  - CryptoSwift (0.3.1)
+  - Google/AdMob (2.0.3):
+    - Google/Core
+    - GoogleMobileAds (~> 7.3)
+  - Google/Core (2.0.3):
+    - GoogleInterchangeUtilities (~> 1.0)
+    - GoogleNetworkingUtilities (~> 1.0)
+    - GoogleSymbolUtilities (~> 1.0)
+    - GoogleUtilities (~> 1.1)
+  - GoogleInterchangeUtilities (1.2.0):
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleMobileAds (7.6.0)
+  - GoogleNetworkingUtilities (1.2.0):
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleSymbolUtilities (1.1.0)
+  - GoogleUtilities (1.2.0):
+    - GoogleSymbolUtilities (~> 1.0)
+
+DEPENDENCIES:
+  - CryptoSwift
+  - Google/AdMob
+
+SPEC CHECKSUMS:
+  CryptoSwift: baf01e3fb3226c0155cd54c266be882b13d45d5e
+  Google: 61379f0072bc561a7e174d23a6cbe41bd6d8599c
+  GoogleInterchangeUtilities: 427382e42d8a340038bec37c6fdfd316e14b5fa2
+  GoogleMobileAds: c2f4d3ef1be73d58ec25158addfde463636433a6
+  GoogleNetworkingUtilities: ec1e9911aca811eb18b7144394fee6168b607785
+  GoogleSymbolUtilities: eb3965ea12710569c7b80db198a39e39b18613f7
+  GoogleUtilities: 85f8ad6b251544286a97163133d042ec95f889c5
+
 COCOAPODS: 0.39.0
