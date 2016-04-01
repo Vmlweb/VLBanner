@@ -1,5 +1,5 @@
 # VLBanner
-iAd, AdMob and IAP wrapper for iOS
+iAd, AdMob and IAP wrapper for iOS using Swift.
 
 ## Features
   * iAd and AdMob support
@@ -49,7 +49,7 @@ defaultLabel.textColor = UIColor.whiteColor()
 ```
 See below for the delegate method to detect touches to the default view.
 
-## Cotainer View
+## Container View
 
 You can use the VLBannerContainer view controller subclass to wrap and respond correctly to the interface.
 
